@@ -10,7 +10,7 @@ confinement: devmode
 
 apps:
   assaultcube:
-    command: client-launcher.sh
+    command: bin/client-launcher.sh
 
 parts:
   assaultcube:
@@ -29,6 +29,18 @@ parts:
       - scripts/
       - README.html
       - changelog.txt
+    organize:
+      bin_unix: bin/bin_unix
+      bot: bin/bot
+      config: bin/config
+      demos: bin/demos
+      docs: bin/docs
+      mods: bin/mods
+      packages: bin/packages
+      screenshots: bin/screenshots
+      scripts: bin/scripts
+      README.html: bin/README.html
+      changelog.txt: bin/changelog.txt
     build-packages:
       - build-essential
       - clang
@@ -41,12 +53,16 @@ parts:
       - libvorbis-dev
       - libcurl3
       - libcurl4-openssl-dev
+
   client-launcher:
     plugin: dump
     after: [assaultcube]
     source: .
     stage:
-      - client-launcher.sh
+      - bin/client-launcher.sh
+    organize:
+      client-launcher.sh: bin/client-launcher.sh
+
   libs:
     plugin: nil
     after: [assaultcube]
