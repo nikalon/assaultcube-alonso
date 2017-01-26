@@ -12,8 +12,7 @@ arm64)
 esac
 
 export LIBGL_DRIVERS_PATH=${SNAP}/usr/lib/$ARCH/dri:${LD_LIBRARY_PATH}
-CUBE_OPTIONS="--home=${SNAP_USER_DATA} --init"
 
 cd ${SNAP}/bin
-exec "bin_unix/native_client" "$@"
+exec bin_unix/native_client --home=${SNAP_USER_DATA} --init "$@"
 
