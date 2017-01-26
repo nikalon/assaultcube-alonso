@@ -14,7 +14,6 @@ apps:
 
 parts:
   assaultcube:
-    # TODO: Use a Makefile to drive the build and install
     plugin: make
     source: https://github.com/assaultcube/AC.git
     make-parameters: ["install", "--directory=source/src", "ACDEBUG=yes"]
