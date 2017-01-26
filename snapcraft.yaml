@@ -10,7 +10,7 @@ confinement: devmode
 
 apps:
   assaultcube:
-    command: assaultcube.sh
+    command: client-launcher.sh
 
 parts:
   assaultcube:
@@ -47,7 +47,7 @@ parts:
     after: [assaultcube]
     source: .
     stage:
-      - assaultcube.sh
+      - client-launcher.sh
   libs:
     plugin: nil
     after: [assaultcube]
