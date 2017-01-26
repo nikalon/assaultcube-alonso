@@ -1,0 +1,6 @@
+# Snapcraft parts
+parts/
+stage/
+prime/
+*.snap
+
