@@ -11,6 +11,8 @@ confinement: devmode
 apps:
   assaultcube:
     command: bin/client-launcher.sh
+  server:
+    command: bin/server-launcher.sh
 
 parts:
   assaultcube:
@@ -62,6 +64,15 @@ parts:
       - bin/client-launcher.sh
     organize:
       client-launcher.sh: bin/client-launcher.sh
+
+  server-launcher:
+    plugin: dump
+    after: [assaultcube]
+    source: .
+    stage:
+      - bin/server-launcher.sh
+    organize:
+      server-launcher.sh: bin/server-launcher.sh
 
   libs:
     plugin: nil
