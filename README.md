@@ -12,4 +12,5 @@ The necessary files that drives a build of AssaultCube as a snap package
 ## How to install the package
 
 Currently AssaultCube is not confined, you must install it with devmode:
+
 `sudo snap install assaultcube*.snap --devmode --dangerous`
