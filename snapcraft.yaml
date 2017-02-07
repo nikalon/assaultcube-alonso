@@ -18,31 +18,14 @@ parts:
   assaultcube:
     plugin: make
     source: https://github.com/assaultcube/AC.git
-    make-parameters: ["install", "--directory=source/src", "ACDEBUG=yes"]
-    artifacts:
-      - bin_unix/
-      - bot/
-      - config/
-      - demos/
-      - docs/
-      - mods/
-      - packages/
-      - screenshots/
-      - scripts/
-      - README.html
-      - changelog.txt
-    organize:
-      bin_unix: bin/bin_unix
-      bot: bin/bot
-      config: bin/config
-      demos: bin/demos
-      docs: bin/docs
-      mods: bin/mods
-      packages: bin/packages
-      screenshots: bin/screenshots
-      scripts: bin/scripts
-      README.html: bin/README.html
-      changelog.txt: bin/changelog.txt
+    source-subdir: source/src
+    install: |
+      install -d ${SNAPCRAFT_PART_INSTALL}/bin
+      cp -rp * ${SNAPCRAFT_PART_INSTALL}/bin
+    stage:
+      - -bin/bin_win32/
+      - -bin/source/
+      - -bin/*.bat
     build-packages:
       - build-essential
       - clang
