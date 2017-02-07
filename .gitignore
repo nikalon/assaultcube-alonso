@@ -1,4 +1,5 @@
 # Snapcraft parts
+setup/
 parts/
 stage/
 prime/
