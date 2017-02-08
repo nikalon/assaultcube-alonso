@@ -17,6 +17,7 @@ apps:
 parts:
   assaultcube:
     plugin: make
+    make-parameters: ["ACDEBUG=yes"]
     source: https://github.com/assaultcube/AC.git
     source-subdir: source/src
     install: |
