@@ -26,6 +26,7 @@ parts:
       - -bin/bin_win32/
       - -bin/source/
       - -bin/*.bat
+      - -bin/*.sh
     build-packages:
       - build-essential
       - clang
