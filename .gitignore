@@ -1,5 +1,5 @@
 # Snapcraft parts
-setup/
+.snapcraft*
 parts/
 stage/
 prime/
