@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.2.0.2
+Name=AssaultCube-snap
+Comment=Realistic first-person shooter
+Icon=${SNAP}/meta/gui/icon.png
+Exec=assaultcube
+Categories=Game;ActionGame;
