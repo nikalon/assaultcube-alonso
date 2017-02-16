@@ -19,6 +19,7 @@ parts:
     plugin: make
     make-parameters: ["ACDEBUG=yes"]
     source: https://github.com/assaultcube/AC.git
+    source-branch: next
     source-subdir: source/src
     install: |
       install -d ${SNAPCRAFT_PART_INSTALL}/bin

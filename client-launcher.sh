@@ -12,7 +12,8 @@ arm64)
 esac
 
 export LIBGL_DRIVERS_PATH=${SNAP}/usr/lib/$ARCH/dri:${LD_LIBRARY_PATH}
+CONFIG_VERSION=next
 
 cd ${SNAP}/bin
-exec bin_unix/native_client --home=${SNAP_USER_DATA} --init "$@"
+exec bin_unix/native_client --home=${SNAP_USER_DATA}/${CONFIG_NEXT} --init "$@"
 
