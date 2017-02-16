@@ -7,7 +7,7 @@ The necessary files that drives a build of AssaultCube as a snap package
 To build this package it's recommended to use a clean installation of Ubuntu 16.04
 
 1. Install snapcraft: `sudo apt install snapcraft`
-2. Clone this repository: `git clone https://github.com/nikalon/assaultcube-snap.git -b next
+2. Clone this repository: `git clone https://github.com/nikalon/assaultcube-snap.git -b next`
 3. Go to the cloned directory: `cd assaultcube-snap`
 4. Build and make the snap: `snapcraft clean && snapcraft`
 
