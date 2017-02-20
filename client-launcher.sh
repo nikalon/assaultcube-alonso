@@ -15,6 +15,6 @@ esac
 export LIBGL_DRIVERS_PATH=${SNAP}/usr/lib/${ARCH}/dri:${LD_LIBRARY_PATH}
 CONFIG_VERSION=1.2
 
-cd ${SNAP}/bin
+cd ${SNAP_DATA}/${CONFIG_VERSION}
 exec bin_unix/linux${ARCH_LAUNCHER}_client --home=${SNAP_USER_DATA}/${CONFIG_VERSION} --init "$@"
 

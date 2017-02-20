@@ -10,5 +10,7 @@ i386)
   exit;;
 esac
 
-cd ${SNAP}/bin
+CONFIG_VERSION=1.2
+
+cd ${SNAP_DATA}/${CONFIG_VERSION}
 exec bin_unix/linux${ARCH_LAUNCHER}_server "$@"
