@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CONFIG_VERSION=1.2
+CONFIG_VERSION=next
 
 if ! [ -d ${SNAP_DATA}/${CONFIG_VERSION} ]; then
   mkdir ${SNAP_DATA}/${CONFIG_VERSION}
