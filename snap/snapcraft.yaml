@@ -39,8 +39,6 @@ parts:
       - libopenal1
       - libopenal-dev
       - libvorbis-dev
-      - libcurl3
-      - libcurl4-openssl-dev
 
   client-launcher:
     plugin: dump
