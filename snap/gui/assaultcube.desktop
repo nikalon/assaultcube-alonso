@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Version=1.2.0.2
+Version=next
 Name=AssaultCube Next
 Comment=Realistic first-person shooter
 Icon=${SNAP}/meta/gui/icon.png
