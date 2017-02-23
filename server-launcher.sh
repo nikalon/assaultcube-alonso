@@ -13,4 +13,4 @@ esac
 CONFIG_VERSION=1.2
 
 cd ${SNAP_DATA}/${CONFIG_VERSION}
-exec bin_unix/linux${ARCH_LAUNCHER}_server "$@"
+exec ${SNAP}/bin/bin_unix/linux${ARCH_LAUNCHER}_server "$@"
