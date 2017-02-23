@@ -3,4 +3,4 @@
 CONFIG_VERSION=next
 
 cd ${SNAP_DATA}/${CONFIG_VERSION}
-exec bin_unix/native_server "$@"
+exec ${SNAP}/bin/bin_unix/native_server "$@"

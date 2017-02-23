@@ -11,5 +11,3 @@ cp -nr ${SNAP}/bin/config/     ${SNAP_DATA}/${CONFIG_VERSION}/
 cp -nr ${SNAP}/bin/demos/      ${SNAP_DATA}/${CONFIG_VERSION}/
 cp -nr ${SNAP}/bin/mods/       ${SNAP_DATA}/${CONFIG_VERSION}/
 cp -nr ${SNAP}/bin/packages/   ${SNAP_DATA}/${CONFIG_VERSION}/
-
-ln -fs ${SNAP}/bin/bin_unix/   ${SNAP_DATA}/${CONFIG_VERSION}/
