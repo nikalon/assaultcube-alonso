@@ -4,5 +4,5 @@ Version=1.2.0.2
 Name=AssaultCube
 Comment=Realistic first-person shooter
 Icon=${SNAP}/meta/gui/icon.png
-Exec=assaultcube
+Exec=assaultcube-alonso
 Categories=Game;ActionGame;

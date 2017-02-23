@@ -9,7 +9,7 @@ grade: devel
 confinement: devmode
 
 apps:
-  assaultcube:
+  assaultcube-alonso:
     command: bin/client-launcher.sh
   server:
     command: bin/server-launcher.sh
