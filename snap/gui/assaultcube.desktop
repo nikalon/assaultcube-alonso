@@ -5,4 +5,5 @@ Name=AssaultCube
 Comment=Arcade first-person shooter
 Icon=${SNAP}/meta/gui/icon.png
 Exec=assaultcube-alonso
+Terminal=false
 Categories=Game;ActionGame;
