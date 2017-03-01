@@ -55,6 +55,8 @@ parts:
   libs:
     plugin: nil
     after: [assaultcube]
+    build-packages:
+      - pulseaudio
     stage-packages:
       - libcurl3
       - libgcc1
