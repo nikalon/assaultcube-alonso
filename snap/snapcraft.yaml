@@ -25,7 +25,7 @@ parts:
       case $ARCH in
         x86_64)
           rm $SNAPCRAFT_PART_INSTALL/bin_unix/linux_client $SNAPCRAFT_PART_INSTALL/bin_unix/linux_server;;
-       i386)
+       *)
           rm $SNAPCRAFT_PART_INSTALL/bin_unix/linux_64_client $SNAPCRAFT_PART_INSTALL/bin_unix/linux_64_server;;
       esac
     organize:
