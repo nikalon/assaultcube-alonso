@@ -18,6 +18,16 @@ parts:
   assaultcube:
     plugin: dump
     source: https://github.com/assaultcube/AC/releases/download/v1.2.0.2/AssaultCube_v1.2.0.2.tar.bz2
+    # Temporary solution to avoid warnings in prime step until
+    # a better solution comes
+    install: |
+      ARCH=$(uname -p)
+      case $ARCH in
+        x86_64)
+          rm $SNAPCRAFT_PART_INSTALL/bin_unix/linux_client $SNAPCRAFT_PART_INSTALL/bin_unix/linux_server;;
+       i386)
+          rm $SNAPCRAFT_PART_INSTALL/bin_unix/linux_64_client $SNAPCRAFT_PART_INSTALL/bin_unix/linux_64_server;;
+      esac
     organize:
       ./*: bin/
     stage:
