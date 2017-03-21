@@ -10,13 +10,21 @@ description: |
     /var/snap/assaultcube-alonso/current/<VERSION>
 
 grade: devel
-confinement: devmode
+confinement: strict
 
 apps:
   assaultcube-alonso:
     command: bin/client-launcher.sh
+    plugs:
+      - x11
+      - opengl
+      - pulseaudio
+      - network
   server:
     command: bin/server-launcher.sh
+    plugs:
+      - network
+      - network-bind
 
 parts:
   assaultcube:
